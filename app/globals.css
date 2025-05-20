@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* to remove scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@layer base {
+
+
+  @layer base {
+    :root {
+      --background: 0 0% 97.65%;
+      --foreground: 0 0% 20%;
+      --card: 0 0% 100%;
+      --card-foreground: 0 0% 20%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 0 0% 20%;
+      --primary: 246.91 74.33% 63.33%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 210.37 75.70% 79.02%;
+      --secondary-foreground: 0 0% 20%;
+      --muted: 45.00 15.62% 74.90%;
+      --muted-foreground: 0 0% 43.14%;
+      --accent: 72.00 17.93% 49.22%;
+      --accent-foreground: 0 0% 100%;
+      --destructive: 0 84.24% 60.20%;
+      --destructive-foreground: 0 0% 100%;
+      --border: 0 0% 83.14%;
+      --input: 0 0% 83.14%;
+      --ring: 246.91 74.33% 63.33%;
+      --chart-1: 246.91 74.33% 63.33%;
+      --chart-2: 282.29 43.57% 47.25%;
+      --chart-3: 274.62 100% 25.49%;
+      --chart-4: 218.54 79.19% 66.08%;
+      --chart-5: 207.27 44% 49.02%;
+      --sidebar: 0 0% 97.65%;
+      --sidebar-foreground: 0 0% 20%;
+      --sidebar-primary: 246.91 74.33% 63.33%;
+      --sidebar-primary-foreground: 0 0% 100%;
+      --sidebar-accent: 72.00 17.93% 49.22%;
+      --sidebar-accent-foreground: 0 0% 100%;
+      --sidebar-border: 0 0% 83.14%;
+      --sidebar-ring: 246.91 74.33% 63.33%;
+      --font-sans: Montserrat, sans-serif;
+      --font-serif: Playfair Display, serif;
+      --font-mono: Source Code Pro, monospace;
+      --radius: 0.5rem;
+      --shadow-2xs: 0px 5px 10px -2px hsl(0 0% 0% / 0.05);
+      --shadow-xs: 0px 5px 10px -2px hsl(0 0% 0% / 0.05);
+      --shadow-sm: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 1px 2px -3px hsl(0 0% 0% / 0.10);
+      --shadow: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 1px 2px -3px hsl(0 0% 0% / 0.10);
+      --shadow-md: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 2px 4px -3px hsl(0 0% 0% / 0.10);
+      --shadow-lg: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 4px 6px -3px hsl(0 0% 0% / 0.10);
+      --shadow-xl: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 8px 10px -3px hsl(0 0% 0% / 0.10);
+      --shadow-2xl: 0px 5px 10px -2px hsl(0 0% 0% / 0.25);
+    }
+
+    .dark {
+      --background: 220.00 14.75% 11.96%;
+      --foreground: 0 0% 89.80%;
+      --card: 197.14 6.93% 19.80%;
+      --card-foreground: 0 0% 89.80%;
+      --popover: 197.14 6.93% 19.80%;
+      --popover-foreground: 0 0% 89.80%;
+      --primary: 246.91 74.33% 63.33%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 274.62 100% 25.49%;
+      --secondary-foreground: 0 0% 89.80%;
+      --muted: 0 0% 26.67%;
+      --muted-foreground: 0 0% 63.92%;
+      --accent: 218.54 79.19% 66.08%;
+      --accent-foreground: 0 0% 89.80%;
+      --destructive: 0 84.24% 60.20%;
+      --destructive-foreground: 0 0% 100%;
+      --border: 0 0% 26.67%;
+      --input: 0 0% 26.67%;
+      --ring: 246.91 74.33% 63.33%;
+      --chart-1: 246.91 74.33% 63.33%;
+      --chart-2: 282.29 43.57% 47.25%;
+      --chart-3: 274.62 100% 25.49%;
+      --chart-4: 218.54 79.19% 66.08%;
+      --chart-5: 207.27 44% 49.02%;
+      --sidebar: 220.00 14.75% 11.96%;
+      --sidebar-foreground: 0 0% 89.80%;
+      --sidebar-primary: 246.91 74.33% 63.33%;
+      --sidebar-primary-foreground: 0 0% 100%;
+      --sidebar-accent: 218.54 79.19% 66.08%;
+      --sidebar-accent-foreground: 0 0% 89.80%;
+      --sidebar-border: 0 0% 26.67%;
+      --sidebar-ring: 246.91 74.33% 63.33%;
+      --font-sans: Montserrat, sans-serif;
+      --font-serif: Playfair Display, serif;
+      --font-mono: Source Code Pro, monospace;
+      --radius: 0.5rem;
+      --shadow-2xs: 0px 5px 10px -2px hsl(0 0% 0% / 0.05);
+      --shadow-xs: 0px 5px 10px -2px hsl(0 0% 0% / 0.05);
+      --shadow-sm: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 1px 2px -3px hsl(0 0% 0% / 0.10);
+      --shadow: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 1px 2px -3px hsl(0 0% 0% / 0.10);
+      --shadow-md: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 2px 4px -3px hsl(0 0% 0% / 0.10);
+      --shadow-lg: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 4px 6px -3px hsl(0 0% 0% / 0.10);
+      --shadow-xl: 0px 5px 10px -2px hsl(0 0% 0% / 0.10), 0px 8px 10px -3px hsl(0 0% 0% / 0.10);
+      --shadow-2xl: 0px 5px 10px -2px hsl(0 0% 0% / 0.25);
+    }
+  }
+
+
+
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.h1 {
+  @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
+}
+
+.h2 {
+  @apply text-2xl font-bold;
+}
+
+.h3 {
+  @apply text-3xl font-bold;
+}
+
+.h4 {
+  @apply text-4xl font-semibold;
+}
+
+.subtitle {
+  @apply text-muted-foreground text-lg mb-8 font-light text-center xl:text-left;
+}
+
+.section-title {
+  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-no-repeat before:bg-center before:w-[24px] before:h-[24px];
+}
+
+.badge {
+  @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+}
+
+/* swiper bullets styles  */
+.swiper-horizontal>.section-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-primary;
+}
