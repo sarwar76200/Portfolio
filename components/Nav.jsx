@@ -11,7 +11,7 @@ import useScrollProgress from "@/hooks/useScrollProgress";
 const links = [
   { path: "/", name: "Home", id: 'home-section' },
   { path: "/", name: "Accomplishments", id: 'accomplishments-section' },
-  { path: "/projects", name: "Projects", id: 'proj-section' },
+  { path: "/projects", name: "Projects", id: 'projects-section' },
   { path: "/contact", name: "Contact", id: 'contact-section' },
 ];
 
@@ -40,6 +40,8 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
   const path = usePathname();
   return (
     <nav className={`${containerStyles}`}>
+
+
       {links.map((link, index) => {
         return (
           // <Link onClick={handleClick}

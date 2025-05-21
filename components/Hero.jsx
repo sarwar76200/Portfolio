@@ -14,6 +14,7 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
+
 const Hero = () => {
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-hero_dark">
@@ -25,6 +26,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Competitive Programmer
             </div>
+            <button >X</button>
             <p className="subtitle max-w-[490] mx-auto xl:mx-0">
               Brief description with insights into myself, my vocational
               journey, and what I engage in professionally.
