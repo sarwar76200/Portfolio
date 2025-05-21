@@ -119,7 +119,9 @@ const About = () => {
     };
     //  console.log(getData(qualificationData , 'experience'))
     return (
-        <section className="xl:h-[860px] pb-12 pt-1 xl:py-24 ">
+        <section className="xl:h-[840px] pb-12 pt-1 xl:py-24 ">
+
+
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto pt-2">
                     About me
@@ -127,7 +129,7 @@ const About = () => {
                 <div>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-x-32 mb-16">
                         {tabs.map((tab, index) =>
-                            <div key={index} className={`transition duration-300 w-auto rounded-3xl flex items-center justify-center ${selected === tab ? "bg-primary" : ""}`}>
+                            <div key={index} className={`transition w-auto rounded-3xl flex items-center justify-center ${selected === tab ? "bg-primary" : "duration-300"}`}>
                                 <p onClick={() => setSelected(tab)} className={`${tab === selected ? 'text-white' : ''} cursor-pointer transition duration-300 text-lg px-6 py-2 uppercase font-semibold text-primary tracking-[4px]`}>{tab}</p>
                             </div>
                         )}

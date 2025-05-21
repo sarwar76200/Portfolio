@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 // hooks 
 import useScrollProgress from '@/hooks/useScrollProgress'
+import { useEffect } from 'react'
 // variants 
 const variants = {
     hidden: { opacity: 0 },
@@ -11,6 +12,9 @@ const variants = {
 
 const Template = ({ children }) => {
     const completion = useScrollProgress();
+    useEffect(() => {
+        localStorage.setItem("scroll-progress", completion.toString());
+    }, [completion])
     return (
         <>
             <motion.main

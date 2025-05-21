@@ -6,9 +6,11 @@ import { usePathname } from "next/navigation";
 
 // framer motion
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import useScrollProgress from "@/hooks/useScrollProgress";
 const links = [
   { path: "/", name: "Home", id: 'home-section' },
-  // { path: "/education", name: "Education", id: 'proj-section' },
+  { path: "/", name: "Accomplishments", id: 'accomplishments-section' },
   { path: "/projects", name: "Projects", id: 'proj-section' },
   { path: "/contact", name: "Contact", id: 'contact-section' },
 ];
@@ -18,6 +20,22 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
     console.log(closeSheet)
     // closeSheet(); // Close the sheet when a link is clicked
   };
+
+  const completion = useScrollProgress();
+
+
+  const getSection = () => {
+    if (completion >= 82) return 'contact';
+    if (completion >= 55) return 'projects';
+    if (completion >= 40) return 'accomplishments';
+    return 'home';
+  }
+
+
+  useEffect(() => {
+    // console.log('lllllllllllllll')
+    console.log(completion)
+  }, [completion]);
 
   const path = usePathname();
   return (
@@ -59,7 +77,10 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
             // elem.style.marginTop = '100px'
             // elem.style.transitionDuration = "2s";
 
-          }} key={index} className="hover:text-violet-500">{link.name}</button>
+          }} key={index} className={`${getSection().toLowerCase() === link.name.toLowerCase() ? `xl:text-primary` : 'xl:text-tertiary'} text-tertiary hover:text-secondary `}>{link.name}
+
+
+          </button>
         );
       })}
     </nav>

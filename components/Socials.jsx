@@ -9,8 +9,11 @@ import {
   RiFacebookBoxFill
 } from "react-icons/ri";
 
-import { SiCodeforces } from "react-icons/si";
-
+import { SiCodeforces, SiGithub, SiFacebook, SiGmail, SiLinkedin } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
+import { FaPhone } from "react-icons/fa6";
+import { ImPhone } from "react-icons/im";
 import Link from "next/link";
 
 // icons for the current user and the current user's profile
@@ -18,23 +21,27 @@ import Link from "next/link";
 const icons = [
   {
     path: "https://www.facebook.com/alam.sa.007/",
-    name: <RiFacebookBoxFill />,
+    name: <SiFacebook />,
   },
   {
     path: "https://github.com/sarwar76200",
-    name: <RiGithubFill />,
+    name: <SiGithub />,
   },
   {
-    path: "https://twitter.com/realpremvarma",
-    name: <RiTwitterXFill />,
+    path: "https://www.linkedin.com/in/sarwar76200",
+    name: <SiLinkedin />,
   },
   {
     path: "https://codeforces.com/profile/sarwar__",
     name: <SiCodeforces />,
   },
   {
-    path: "https://www.linkedin.com/in/sarwar76200",
-    name: <RiLinkedinFill />,
+    path: "mailto:sarwar76200@gmail.com",
+    name: <SiGmail />,
+  },
+  {
+    path: "tel:+8801874116935",
+    name: <ImPhone />,
   },
 ];
 
