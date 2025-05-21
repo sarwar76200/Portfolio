@@ -8,6 +8,7 @@ import Reviews from "@/components/Reviews";
 import Cta from "@/components/Cta";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
+import { Dot } from "lucide-react";
 
 export default function Home() {
   return (
@@ -20,6 +21,6 @@ export default function Home() {
       {/* <Cta /> */}
       <Projects />
       <Contact />
-    </main>
+    </main >
   );
 }

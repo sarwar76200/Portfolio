@@ -7,7 +7,7 @@ import { RiArrowDownLine } from "react-icons/ri";
 const projectData = [
   {
     image: "/work/3.png",
-    category: ["react", "express", "NodeJS", "Flask", "MongoDB"],
+    category: ["React", "Express", "NodeJS", "Flask", "MongoDB"],
     name: "ExamEase",
     description:
       "Automtaed Exam Evaluation System",

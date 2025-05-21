@@ -13,7 +13,7 @@ const Contact = () => {
               <span className="w-[30px] h-[2px] bg-primary"></span>
               Say Hello 👋
             </div>
-            <h1 className="h1 max-w-md mb-8">Lets's Work Together.</h1>
+            <h1 className="h1 max-w-md mb-8">Get in touch.</h1>
             <p className="subtitle max-w-[400px]">
               I'm always open to new opportunities and collaborations. Contact me via email, phone, or social media. I look forward to hearing from you soon. 😊
             </p>

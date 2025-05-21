@@ -21,11 +21,11 @@ body::-webkit-scrollbar {
       --popover-foreground: 0 0% 20%;
       --primary: 246.91 74.33% 63.33%;
       --primary-foreground: 0 0% 100%;
-      --secondary: 210.37 75.70% 79.02%;
+      --secondary: 217.22 91.22% 59.8%;
       --secondary-foreground: 0 0% 20%;
       --muted: 45.00 15.62% 74.90%;
       --muted-foreground: 0 0% 43.14%;
-      --accent: 72.00 17.93% 49.22%;
+      --accent: 262.12 83.26% 57.84%;
       --accent-foreground: 0 0% 100%;
       --destructive: 0 84.24% 60.20%;
       --destructive-foreground: 0 0% 100%;
@@ -66,9 +66,9 @@ body::-webkit-scrollbar {
       --card-foreground: 0 0% 89.80%;
       --popover: 197.14 6.93% 19.80%;
       --popover-foreground: 0 0% 89.80%;
-      --primary: 246.91 74.33% 63.33%;
+      --primary: 258.31 89.53% 66.27%;
       --primary-foreground: 0 0% 100%;
-      --secondary: 274.62 100% 25.49%;
+      --secondary: 217.22 91.22% 59.8%;
       --secondary-foreground: 0 0% 89.80%;
       --muted: 0 0% 26.67%;
       --muted-foreground: 0 0% 63.92%;

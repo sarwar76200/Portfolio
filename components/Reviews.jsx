@@ -61,8 +61,8 @@ const reviewsData = [
 
 const Reviews = () => {
   return (
-    <section className="mb-12 xl:mb-32">
-      <div className="container mx-auto">
+    <section id="accomplishments-section" className="mb-12 xl:mb-32">
+      <div className="pt-32 container mx-auto">
         <h2 className="section-title mb-12 text-center mx-auto">Accomplishments</h2>
         {/* slider  */}
         <Swiper
@@ -81,7 +81,7 @@ const Reviews = () => {
           {reviewsData.map((person, index) => {
             return (
               <SwiperSlide key={index}>
-                <Card className="bg-tertiary dark:bg-secondary/40 p-8 min-h-[300px]">
+                <Card className="bg-primary/[5%] dark:bg-secondary/5 p-8 min-h-[300px]">
                   <CardHeader className="p-0 mb-10">
                     <div className="flex items-center gap-x-4">
                       {/* image  */}

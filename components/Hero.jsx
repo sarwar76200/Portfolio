@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Download, Send } from "lucide-react";
+import { ArrowDown, ChevronDown, Download, Send } from "lucide-react";
 
 import {
   RiBriefcase4Fill,
@@ -43,7 +43,7 @@ const Hero = () => {
               </Button>
 
               <a href="/Resume_Sarowar.pdf" download="Resume.pdf">
-                <Button variant="secondary" className="gap-x-2">
+                <Button variant="secondary" className="gap-x-2 text-white">
                   Download CV <Download size={18} />
                 </Button>
               </a>
@@ -59,7 +59,8 @@ const Hero = () => {
         </div>
         {/* icon   */}
         <div className="hidden md:flex absolute left-2/4 botton-44 xl:bottom-12 animate-bounce">
-          <RiArrowDownSLine className="text-3xl text-primary" />
+          <ArrowDown className="text-3xl text-primary" />
+          {/* <ChevronDown className="text-3xl text-primary" /> */}
         </div>
       </div>
     </section>
