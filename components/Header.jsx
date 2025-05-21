@@ -52,7 +52,7 @@ const header = () => {
         {/* <div> <Logo /></div> */}
 
 
-        
+
         {
           links.map((link, idx) => {
             return <p onClick={() => {
@@ -61,7 +61,7 @@ const header = () => {
                 elem?.scrollIntoView({
                   behavior: 'smooth'
                 })
-                if (link.id === 'home-section') {
+                if (link === 'home') {
                   window.scrollTo({
                     top: 0,
                     left: 0,
