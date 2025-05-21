@@ -19,8 +19,10 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <link rel="icon" href="/logo.png" />
       <body className={`${outfit.className}`}>
+        
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
+          
           {children}
           <Footer />
         </ThemeProvider>

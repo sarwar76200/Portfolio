@@ -43,7 +43,7 @@ const projectData = [
   },
   {
     image: "/work/4.png",
-    category: ["Assembly","STM32", "Embedded C"],
+    category: ["Assembly", "STM32", "Embedded C"],
     name: "EVM STM32",
     description:
       "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
@@ -78,7 +78,7 @@ const Projects = () => {
   });
 
   return (
-    <section id="proj-section" className="min-h-screen pt-12">
+    <section id="projects-section" className="min-h-screen pt-12">
       <div className="pt-16 container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
           My Projects
