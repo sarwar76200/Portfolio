@@ -40,13 +40,13 @@ const Hero = () => {
                 })
               }} className="gap-x-2">
 
-                Contact me <Send size={18} />
+                Contact<Send size={18} />
 
               </Button>
 
               <a href="/Resume_Sarowar.pdf" download="Resume.pdf">
                 <Button variant="secondary" className="gap-x-2 text-white">
-                  Download CV <Download size={18} />
+                  Resume<Download size={18} />
                 </Button>
               </a>
             </div>
