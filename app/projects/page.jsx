@@ -19,7 +19,7 @@ const projectData = [
     category: ["PHP", "MySQL", "AJAX", "jQuery", "BootStrap"],
     name: "PWS ",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
+      "Prescription Generation Software",
     link: "https://github.com/sarwar76200/PWS/",
     github: "https://github.com/sarwar76200/PWS/",
   },
@@ -28,7 +28,7 @@ const projectData = [
     category: ["Pandas", "scikit-learn", "Seaborn", "React"],
     name: "AntiPhish",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
+      "Phishing Website Detection Tool",
     link: "https://github.com/sarwar76200/AntiPhish",
     github: "https://github.com/sarwar76200/AntiPhish",
   },
@@ -37,7 +37,7 @@ const projectData = [
     category: ["PyTorch", "NumPy", "NLP", "React", "tRPC"],
     name: "BondhuBot",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
+      "Depression Analyzing Chatbot",
     link: "https://github.com/withtahmid/cse499/",
     github: "https://github.com/withtahmid/cse499/",
   },
@@ -46,16 +46,16 @@ const projectData = [
     category: ["Assembly", "STM32", "Embedded C"],
     name: "EVM STM32",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
+      "Electronic Voting Machine",
     link: "https://github.com/sarwar76200/STM32-EVM",
     github: "https://github.com/sarwar76200/STM32-EVM",
   },
   {
     image: "/work/4.png",
     category: ["Java", "Swing", "Gradle"],
-    name: "Calculator",
+    name: "GUI Calculator",
     description:
-      "Lorem ipsum, dolor sit amet consectetur a necessitatibus",
+      "Desktop Calculator With Graphical UI",
     link: "/",
     github: "/",
   }

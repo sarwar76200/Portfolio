@@ -75,7 +75,7 @@ const ProjectCard = ({ project }) => {
       </CardHeader>
       <div className="h-full px-8 py-6">
         <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg">{project.description}</p>
+        <p className="text-muted-foreground text-lg mb-2">{project.description}</p>
         <div className="flex flex-wrap flex-row gap-2">
           {project && project['category'].map((category, idx) =>
             <div key={idx}>

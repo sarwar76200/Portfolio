@@ -14,24 +14,38 @@ import {
     docker,
     redis,
     graphQL,
+    vite,
+    python,
+    pytorch,
+    java,
+    cpp,
+    mongodb,
+    svelte,
+    firebase
+
 } from "@/assets/icons/index";
 
 
 export const skills = [
     {
-        imageUrl: html,
-        name: "HTML",
-        type: "Frontend",
+        imageUrl: cpp,
+        name: "C++",
+        type: "Lang",
     },
     {
-        imageUrl: css,
-        name: "CSS",
-        type: "Frontend",
+        imageUrl: java,
+        name: "Java",
+        type: "Lang",
+    },
+    {
+        imageUrl: python,
+        name: "Python",
+        type: "Lang",
     },
     {
         imageUrl: javascript,
         name: "JavaScript",
-        type: "Frontend",
+        type: "Lang",
     },
     {
         imageUrl: typescript,
@@ -65,12 +79,6 @@ export const skills = [
     },
 
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-
-    {
         imageUrl: nodejs,
         name: "Node.js",
         type: "Backend",
@@ -80,16 +88,7 @@ export const skills = [
         name: "Redux",
         type: "State Management",
     },
-    {
-        imageUrl: docker,
-        name: "Docker",
-        type: "Backend",
-    },
-    {
-        imageUrl: redis,
-        name: "Redis",
-        type: "Backend",
-    },
+
     {
         imageUrl: graphQL,
         name: "graphQL",

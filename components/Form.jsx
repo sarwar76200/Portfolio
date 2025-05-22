@@ -33,8 +33,8 @@ const Form = () => {
         />
         <MessageSquare className="absolute top-4 right-6" size={20} />
       </div>
-      <Button type="submit" className="flex items-center gap-x-1 max-w-[166px]">
-        Let's Talk <ArrowRightIcon size={20} />
+      <Button type="submit" className="flex items-center gap-x-1 max-w-full sm:max-w-[166px] md:max-w-[166px] lg:max-w-[166px] xl:max-w-[166px]">
+        Say Hello <ArrowRightIcon size={20} />
       </Button>
     </form>
   );
