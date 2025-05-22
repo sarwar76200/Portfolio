@@ -28,8 +28,7 @@ const Hero = () => {
             </div>
             {/* <button >X</button> */}
             <p className="subtitle max-w-[490] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what I engage in professionally.
+              I'm a CS graduate with a passion for competitive programming. With a strong foundation in data structures and algorithms, I aspire to bring ideas to life.
             </p>
             {/* buttons  */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

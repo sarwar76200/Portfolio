@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const logo = () => {
+const logo = ({ classList }) => {
   return (
-    <Link href="/">
-      {/* <Image src='/logo.svg' width={54} height={54} priority alt="" /> */}
-      <div className="font-bold text-4xl text-gray-900 dark:text-white">
+    <div style={{ cursor: "pointer" }}>
+      <div className={classList || "font-bold text-4xl text-gray-900 dark:text-white"}>
         sarwar__
       </div>
-    </Link>
+    </div>
+
   );
 };
 

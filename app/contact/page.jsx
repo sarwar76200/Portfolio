@@ -1,4 +1,4 @@
-import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
+import { MailIcon, HomeIcon, PhoneCall, MapPin } from "lucide-react";
 import Form from "@/components/Form";
 
 const Contact = () => {
@@ -15,7 +15,7 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Get in touch.</h1>
             <p className="subtitle max-w-[400px]">
-              I'm always open to new opportunities and collaborations. Contact me via email, phone, or social media. I look forward to hearing from you soon. 😊
+              Always open to opportunities and fresh ideas. Feel free to connect with me through email, phone, or social media. Let's make something amazing happen!
             </p>
           </div>
           {/* illustration  */}
@@ -25,17 +25,17 @@ const Contact = () => {
         <div className="grid xl:grid-cols-2 mb-24 xl:mb-32">
           {/* info text  */}
           <div className="flex flex-col gap-y-8 xl:gap-y-4 mb-12 xl:mb-24 text-base xl:text-lg">
+            {/* address  */}
+            <div className="flex items-center gap-x-8">
+              <MapPin size={18} className="text-primary" />
+              <div>
+                Shantinagar, Dhaka
+              </div>
+            </div>
             {/* mail  */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
               <div>sarwar76200@gmail.com</div>
-            </div>
-            {/* address  */}
-            <div className="flex items-center gap-x-8">
-              <HomeIcon size={18} className="text-primary" />
-              <div>
-                Shantinagar, Dhaka
-              </div>
             </div>
             {/* phone  */}
             <div className="flex items-center gap-x-8">

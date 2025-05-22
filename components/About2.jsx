@@ -12,13 +12,15 @@ import {
     GraduationCap,
     Calendar,
     Briefcase,
+    Cake,
+    MapPin,
 } from "lucide-react";
 import { useState } from "react";
 
 const infoData = [
     {
         icon: <User2 size={20} />,
-        text: "Sarowar A. Minhaj",
+        text: "Sarowar Alam Minhaj",
     },
     {
         icon: <PhoneCall size={20} />,
@@ -29,7 +31,7 @@ const infoData = [
         text: "sarwar76200.com",
     },
     {
-        icon: <Calendar size={20} />,
+        icon: <Cake size={20} />,
         text: "Born on 7th June , 2000",
     },
     {
@@ -37,7 +39,7 @@ const infoData = [
         text: "B.Sc in Computer Science",
     },
     {
-        icon: <HomeIcon size={20} />,
+        icon: <MapPin size={20} />,
         text: "Shantinagar, Dhaka",
     },
 ];
@@ -49,16 +51,19 @@ const qualificationData = [
             {
                 university: "K. L. Jubilee School and College",
                 qualification: "SSC in Science",
+                gpa: "5.00",
                 years: "2015 - 2017",
             },
             {
                 university: "Udayan Higher Secondary School",
                 qualification: "HSC in Science",
+                gpa: "4.75",
                 years: "2017 - 2019",
             },
             {
                 university: "North South University",
                 qualification: "B.Sc in Computer Science",
+                gpa: "3.11",
                 years: "2020 - 2025",
             }
         ],
@@ -140,13 +145,8 @@ const About = () => {
                         <div className="mb-16 flex items-center justify-center">
                             <div className="text-center xl:text-left">
                                 <h3 className="h3 mb-4">
-                                    Enthusiast Competitive Programmer
+                                    Me, At A Glance
                                 </h3>
-                                <p className="subtitle max-w-[490] max-auto xl:mx-0">
-                                    I specialize in crafting intuitive websites with
-                                    cutting-edge technology, delivering dynamic and engaging
-                                    user experiences
-                                </p>
                                 {/* icons  */}
                                 <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                     {infoData.map((item, index) => {
@@ -199,14 +199,14 @@ const About = () => {
                                                             <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                         </div>
                                                         <div>
-                                                            <div className=" font-semibold text-xl leading-none mb-2">
+                                                            <div className=" font-semibold text-xl leading-none">
                                                                 {company}
+                                                            </div>
+                                                            <div className="text-base font-medium mb-2">
+                                                                {years}
                                                             </div>
                                                             <div className="text-lg leading-none text-muted-foreground mb-4">
                                                                 {role}
-                                                            </div>
-                                                            <div className="text-base font-medium">
-                                                                {years}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -227,21 +227,24 @@ const About = () => {
                                     <div className="flex flex-col gap-y-8">
                                         {getData(qualificationData, "education").data.map(
                                             (item, index) => {
-                                                const { university, qualification, years } = item;
+                                                const { university, qualification, gpa, years } = item;
                                                 return (
                                                     <div className="flex gap-x-8 group" key={index}>
                                                         <div className="h-[84px] w-[1px] bg-border relative ml-2">
                                                             <div className="w-[11px] h-[11px] rounded-full bg-primary absolute -left-[5px] group-hover:translate-y-[84px] transition-all duration-500"></div>
                                                         </div>
                                                         <div>
-                                                            <div className=" font-semibold text-xl leading-none mb-2">
+                                                            <div className=" font-semibold text-xl leading-none">
                                                                 {university}
                                                             </div>
-                                                            <div className="text-lg leading-none text-muted-foreground mb-4">
+                                                            <div className="text-base font-medium mb-2 ">
+                                                                {years}
+                                                            </div>
+                                                            <div className="text-lg leading-none text-muted-foreground mb-2">
                                                                 {qualification}
                                                             </div>
-                                                            <div className="text-base font-medium">
-                                                                {years}
+                                                            <div className="text-lg leading-none text-muted-foreground">
+                                                                GPA: {gpa} out of {Math.ceil(parseFloat(gpa))}.00
                                                             </div>
                                                         </div>
                                                     </div>

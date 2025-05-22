@@ -3,7 +3,7 @@ import appwrite from './appwrite.svg'
 import git from './git.svg'
 import html from './html.svg'
 import javascript from './javascript.svg'
-import cpp from './cpp.png'
+import cpp from './cpp.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
 import nextjs from './nextjs.svg'
@@ -29,6 +29,12 @@ import graphQL from './graphQL.svg'
 import threejs from './threejs.svg'
 import docker from './docker.svg'
 import redis from './redis.svg'
+import java from './java.svg'
+import svelte from './svelte.svg'
+import firebase from './firebase.svg'
+import python from './python.svg'
+import pytorch from './pytorch.svg'
+import vite from './vite.svg'
 
 export {
     css,
@@ -61,7 +67,13 @@ export {
     soundon,
     soundoff,
     docker,
-    redis
-    
+    redis,
+    java,
+    svelte,
+    firebase,
+    python,
+    pytorch,
+    vite
+
 
 }
