@@ -6,7 +6,7 @@ import { RiArrowDownLine } from "react-icons/ri";
 
 const projectData = [
   {
-    image: "/work/3.png",
+    image: "/work/ee2.png",
     category: ["React", "Express", "NodeJS", "Flask", "MongoDB"],
     name: "ExamEase",
     description:
@@ -15,7 +15,7 @@ const projectData = [
     github: "https://bitbucket.org/my-university-projects/cse327-exam-ease/src/sarwar/",
   },
   {
-    image: "/work/1.png",
+    image: "/work/PWS.png",
     category: ["PHP", "MySQL", "AJAX", "jQuery", "BootStrap"],
     name: "PWS ",
     description:
@@ -24,7 +24,7 @@ const projectData = [
     github: "https://github.com/sarwar76200/PWS/",
   },
   {
-    image: "/work/2.png",
+    image: "/work/anti1.jpeg",
     category: ["Pandas", "scikit-learn", "Seaborn", "React"],
     name: "AntiPhish",
     description:
@@ -51,7 +51,7 @@ const projectData = [
     github: "https://github.com/sarwar76200/STM32-EVM",
   },
   {
-    image: "/work/4.png",
+    image: "/work/calc.png",
     category: ["Java", "Swing", "Gradle"],
     name: "GUI Calculator",
     description:

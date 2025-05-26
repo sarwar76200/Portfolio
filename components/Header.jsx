@@ -51,14 +51,40 @@ const header = () => {
 
       <>
         {/* Modal Overlay */}
-        <div
+        <div onClick={() => {
+          setTimeout(() => {
+            const overlay = document.getElementById('modalOverlay');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            overlay.classList.remove('opacity-100');
+          }, 300);
+
+          links.map((link, idx) => {
+            const elem = document.getElementById(`${link}-x`);
+            elem.style.transitionDelay = (0.3 - (idx + 1) * 0.1).toString() + 's';
+            // elem.style.transform = "translateY(500px)";
+            elem.classList.add('translate-y-[500px]', 'opacity-0');
+            elem.classList.remove('opacity-100');
+            elem.style.transitionDuration = (0.3 - (idx + 1) * 0.1).toString() + 's';
+          })
+
+          document.getElementById(`social-panel`).classList.add("translate-y-[200px]", "opacity-0");
+          document.getElementById(`social-panel`).classList.remove("opacity-100");
+          // addClasses('social-panel', ['translate-y-[500px]']);
+          document.getElementById(`social-panel`).style.transitionDelay = "0.0s";
+
+          // const buttonSlide = document.getElementById('buttonSlide');
+          // buttonSlide.classList.add('translate-y-full', 'opacity-0');
+          // buttonSlide.classList.remove('translate-y-0', 'opacity-100');
+
+
+        }}
           id="modalOverlay"
           className="dark:bg-white/5 bg-black/10  fixed inset-0 backdrop-blur-[20px] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 z-40"
         >
           {/* Modal Glass */}
 
 
-          <div className="flex flex-col justify-center items-center space-y-24">
+          <div className="flex flex-col justify-center items-center space-y-[50px]">
             <div onClick={() => {
               setTimeout(() => {
                 window.scrollTo({
@@ -99,50 +125,7 @@ const header = () => {
             <div id="social-panel" className=" translate-y-[200px] transition duration-500 opacity-0 flex flex-col justify-content items-center space-y-16">
               <Socials containerStyles="flex gap-x-6 mx-auto xl:mx-0 "
                 iconsStyles="dark:text-gray-200 text-gray-700 text-[20px] hover:text-accent dark:hover:text-accent transition-all" />
-              <div onClick={() => {
-                setTimeout(() => {
-                  const overlay = document.getElementById('modalOverlay');
-                  overlay.classList.add('opacity-0', 'pointer-events-none');
-                  overlay.classList.remove('opacity-100');
-                }, 300);
 
-                links.map((link, idx) => {
-                  const elem = document.getElementById(`${link}-x`);
-                  elem.style.transitionDelay = (0.3 - (idx + 1) * 0.1).toString() + 's';
-                  // elem.style.transform = "translateY(500px)";
-                  elem.classList.add('translate-y-[500px]', 'opacity-0');
-                  elem.classList.remove('opacity-100');
-                  elem.style.transitionDuration = (0.3 - (idx + 1) * 0.1).toString() + 's';
-                })
-
-                document.getElementById(`social-panel`).classList.add("translate-y-[200px]", "opacity-0");
-                document.getElementById(`social-panel`).classList.remove("opacity-100");
-                // addClasses('social-panel', ['translate-y-[500px]']);
-                document.getElementById(`social-panel`).style.transitionDelay = "0.0s";
-
-                // const buttonSlide = document.getElementById('buttonSlide');
-                // buttonSlide.classList.add('translate-y-full', 'opacity-0');
-                // buttonSlide.classList.remove('translate-y-0', 'opacity-100');
-
-
-              }} id="close-button" style={{ cursor: "pointer" }}>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={40}
-                  height={40}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={1}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-circle-x-icon lucide-circle-x"
-                >
-                  <circle cx={12} cy={12} r={10} />
-                  <path d="m15 9-6 6" />
-                  <path d="m9 9 6 6" />
-                </svg>
-              </div>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ const reviewsData = [
       "Was qualified for ICPC Asia West Continent Finals in 2023 as a part of team NSU_DDC",
   },
   {
-    avatar: "/reviews/trophy.svg",
+    avatar: "/reviews/cou2023.png",
     name: "Ranked 27th",
     job: "CoU-BRACNet IUPC 2023",
     review:
@@ -41,21 +41,49 @@ const reviewsData = [
     name: "Ranked 1636th",
     job: "Meta Hacker Cup 2023",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, molestiae! Expedita, numquam quos!",
+      "Competed with 20K+ participants in the first round and ranked 1,636th in the second round of Meta Hacker Cup 2023",
   },
   {
-    avatar: "/reviews/avatar-6.png",
-    name: " Evelyn Anderson",
-    job: "interior designer",
+    avatar: "/reviews/buet2023.png",
+    name: "Ranked 27th",
+    job: "BUET CSE FEST 2023 IUPC",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, molestiae! Expedita, numquam quos!",
+      "Ranked 27th in BUET CSE FEST 2023 IUPC as a part of team NSU_TravelingSolvesmen",
   },
   {
-    avatar: "/reviews/avatar-6.png",
-    name: " Evelyn Anderson",
-    job: "interior designer",
+    avatar: "/reviews/ju2023-1.png",
+    name: "Ranked 88th",
+    job: "NCPC 2023",
     review:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, molestiae! Expedita, numquam quos!",
+      "NSU_HalfHeaven",
+  },
+  {
+    avatar: "/reviews/cuet2024.png",
+    name: "Ranked 50th",
+    job: "CUET IUPC 2024",
+    review:
+      "NSU_CarpalTunnel",
+  },
+  {
+    avatar: "/reviews/sust2023.png",
+    name: "Ranked 34th",
+    job: "SUST IUPC 2023",
+    review:
+      "NSU_TooMuchAC",
+  },
+  {
+    avatar: "/reviews/sust2024.png",
+    name: "Ranked 40th",
+    job: "SUST IUPC 2024",
+    review:
+      "NSU_3UNSAT",
+  },
+  {
+    avatar: "/reviews/buet2022.png",
+    name: "Ranked 73rd",
+    job: "BUET CSE FEST 2022 IUPC",
+    review:
+      "NSU_MultiverseOfErrors™",
   },
 ];
 
@@ -87,8 +115,8 @@ const Reviews = () => {
                       {/* image  */}
                       <Image
                         src={person.avatar}
-                        width={70}
-                        height={70}
+                        width={100}
+                        height={100}
                         alt=""
                         priority
                       />
