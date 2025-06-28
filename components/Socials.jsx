@@ -22,26 +22,32 @@ const icons = [
   {
     path: "https://www.facebook.com/alam.sa.007/",
     name: <SiFacebook />,
+    label: "Facebook profile"
   },
   {
     path: "https://github.com/sarwar76200",
     name: <SiGithub />,
+    label: "Github profile"
   },
   {
     path: "https://www.linkedin.com/in/sarwar76200",
     name: <SiLinkedin />,
+    label: "LinkedIn profile"
   },
   {
     path: "https://codeforces.com/profile/sarwar__",
     name: <SiCodeforces />,
+    label: "CodeForces handle"
   },
   {
     path: "mailto:sarwar76200@gmail.com",
     name: <SiGmail />,
+    label: "Email address"
   },
   {
-    path: "tel:+8801874116935",
+    path: "tel:008801874116935",
     name: <ImPhone />,
+    label: "Phone number"
   },
 ];
 
@@ -50,7 +56,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link aria-label={icon.label} href={icon.path} key={index}>
             <div className={`${iconsStyles}`}>{icon.name}</div>
           </Link>
         );

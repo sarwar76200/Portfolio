@@ -117,7 +117,7 @@ const Reviews = () => {
                         src={person.avatar}
                         width={100}
                         height={100}
-                        alt=""
+                        alt={person.job}
                         priority
                       />
                       {/* name  */}
