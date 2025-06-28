@@ -9,6 +9,7 @@ const ThemeToggler = () => {
   return (
     <div>
       <Button
+        aria-label="Theme toggler"
         variant="outline"
         size="icon"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

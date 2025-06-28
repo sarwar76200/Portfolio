@@ -35,12 +35,12 @@ const Contact = () => {
             {/* mail  */}
             <div className="flex items-center gap-x-8">
               <MailIcon size={18} className="text-primary" />
-              <div>sarwar76200@gmail.com</div>
+              <a href="mailto:sarwar76200@gmail.com">sarwar76200@gmail.com</a>
             </div>
             {/* phone  */}
             <div className="flex items-center gap-x-8">
               <PhoneCall size={18} className="text-primary" />
-              <div>+880 187411 6935</div>
+              <a href="tel:008801874116935">+880 187411 6935</a>
             </div>
           </div>
           <Form />
