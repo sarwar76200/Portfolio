@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sarwar76200.netlify.app/sitemap.xml
