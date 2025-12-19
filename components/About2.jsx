@@ -144,9 +144,9 @@ const About = () => {
                     <div style={{ "--delay": 0.05 + "s" }} className={`${selected === 'Personal' ? '' : 'hidden'} animate-slideIn opacity-0 text-xl my-2 transition duration-300 mb-16 flex items-center justify-center`}>
                         <div className="mb-16 flex items-center justify-center">
                             <div className="text-center xl:text-left">
-                                <h3 className="h3 mb-4">
+                                {/* <h3 className="h3 mb-4">
                                     Me, At A Glance
-                                </h3>
+                                </h3> */}
                                 {/* icons  */}
                                 <div className="grid xl:grid-cols-2 gap-4 mb-12">
                                     {infoData.map((item, index) => {
@@ -175,9 +175,9 @@ const About = () => {
 
                     <div style={{ "--delay": 0.05 + "s" }} className={`${selected === 'Qualifications' ? '' : 'hidden'} animate-slideIn opacity-0 text-xl my-2 transition duration-300 mb-16 flex items-center justify-center`}>
                         <div>
-                            <h3 className="h3 mb-8 text-center xl:text-left">
+                            {/* <h3 className="h3 mb-8 text-center xl:text-left">
                                 My Journey So Far
-                            </h3>
+                            </h3> */}
                             {/* experience and education wrapper  */}
                             <div className="grid md:grid-cols-2 gap-y-8">
                                 {/* experience  */}
