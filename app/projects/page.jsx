@@ -11,7 +11,7 @@ const projectData = [
     name: "ExamEase",
     description:
       "Automtaed Exam Evaluation System",
-    link: "https://bitbucket.org/my-university-projects/cse327-exam-ease/src/sarwar/",
+    link: "https://exam-ease-six.vercel.app",
     github: "https://bitbucket.org/my-university-projects/cse327-exam-ease/src/sarwar/",
   },
   {
@@ -20,7 +20,7 @@ const projectData = [
     name: "PWS ",
     description:
       "Prescription Generation Software",
-    link: "https://github.com/sarwar76200/PWS/",
+    link: "https://pws.free.nf",
     github: "https://github.com/sarwar76200/PWS/",
   },
   {
@@ -33,16 +33,16 @@ const projectData = [
     github: "https://github.com/sarwar76200/AntiPhish",
   },
   {
-    image: "/work/2.png",
+    image: "/work/bondhubot.jpg",
     category: ["PyTorch", "NumPy", "NLP", "React", "tRPC"],
     name: "BondhuBot",
     description:
       "Depression Analyzing Chatbot",
-    link: "https://github.com/withtahmid/cse499/",
+    link: "https://bondhubot.netlify.app",
     github: "https://github.com/withtahmid/cse499/",
   },
   {
-    image: "/work/4.png",
+    image: "/work/hardware.jpg",
     category: ["Assembly", "STM32", "Embedded C"],
     name: "EVM STM32",
     description:
@@ -81,7 +81,7 @@ const Projects = () => {
     <section id="projects-section" className="min-h-screen pt-12">
       <div className="pt-16 container mx-auto">
         <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
-          My Projects
+          Projects
         </h2>
         {/* tabs  */}
         {/* <TabsList className="w-full grid h-full md:grid-cols-4 lg:max-w-[640px] mb-12 mx-auto md:border dark:border-none">

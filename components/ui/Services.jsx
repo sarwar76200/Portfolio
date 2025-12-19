@@ -10,7 +10,7 @@ import {
 const servicesData = [
   {
     icon: <Network size={72} strokeWidth={0.8} />,
-    
+
     title: "Data Structure and Algorithms",
     description:
       "I am very proficient in Data Structure and Algorithms",
@@ -40,7 +40,7 @@ const Services = () => {
     <section className="mb-12 xl:mb-36">
       <div className="container mx-auto">
         <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
-          My Expertise
+          Expertise
         </h2>
         {/* grid items  */}
         <div className="grid xl:grid-cols-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">

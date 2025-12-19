@@ -6,9 +6,12 @@ import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
 // import swiper react components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Grid } from 'swiper/modules';
 
 // import swiper styles
 import "swiper/css";
+// import 'swiper/css';
+import 'swiper/css/grid';
 import "swiper/css/pagination";
 
 // import required modules
@@ -92,24 +95,28 @@ const Reviews = () => {
     <section id="accomplishments-section" className="mb-12 xl:mb-32">
       <div className="pt-32 container mx-auto">
         <h2 className="section-title mb-12 text-center mx-auto">Accomplishments</h2>
-        {/* slider  */}
         <Swiper
-          slidesPerView={1}
+          modules={[Pagination, Grid]}
+          slidesPerView={1} // Number of slides visible per view
+          grid={{
+            rows: 1,
+            fill: 'row',
+          }}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            1400: { slidesPerView: 3 },
+            640: { slidesPerView: 2, grid: { rows: 2, fill: 'row' } },
+            1400: { slidesPerView: 3, grid: { rows: 2, fill: 'row' } }
           }}
           spaceBetween={30}
-          modules={[Pagination]}
           pagination={{
             clickable: true,
           }}
-          className="h-[350px]"
+          className=""
         >
+          {/* Generate a sufficient number of slides */}
           {reviewsData.map((person, index) => {
             return (
               <SwiperSlide key={index}>
-                <Card className="bg-primary/[5%] dark:bg-secondary/5 p-8 min-h-[300px]">
+                <Card className="bg-primary/[5%] dark:bg-secondary/5 p-8 min-h-[320px]">
                   <CardHeader className="p-0 mb-10">
                     <div className="flex items-center gap-x-4">
                       {/* image  */}
@@ -139,5 +146,7 @@ const Reviews = () => {
     </section>
   );
 };
+
+
 
 export default Reviews;
