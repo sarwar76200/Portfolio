@@ -13,7 +13,7 @@ const useScrollProgress = () => {
       }
 
     };
-    console.log(completion)
+    // console.log(completion)
     //  Event 
     window.addEventListener('scroll', updateScrollCompletion);
     // Clear Event

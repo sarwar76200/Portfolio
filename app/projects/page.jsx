@@ -10,7 +10,7 @@ const projectData = [
     category: ["React", "Express", "NodeJS", "Flask", "MongoDB"],
     name: "ExamEase",
     description:
-      "Automtaed Exam Evaluation System",
+      "An automated exam evaluation and proctoring system that can be used to take and manage online exams efficiently",
     link: "https://exam-ease-six.vercel.app",
     github: "https://bitbucket.org/my-university-projects/cse327-exam-ease/src/sarwar/",
   },

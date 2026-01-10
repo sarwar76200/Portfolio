@@ -34,7 +34,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles, closeSheet }) => {
 
   useEffect(() => {
     // console.log('lllllllllllllll')
-    console.log(completion)
+    // console.log(completion)
   }, [completion]);
 
   const path = usePathname();
