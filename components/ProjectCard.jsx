@@ -77,14 +77,16 @@ const ProjectCard = ({ project }) => {
       </CardHeader>
       <div className="h-full px-8 py-6">
         <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg mb-2">{project.description}</p>
-        <div className="flex flex-wrap flex-row gap-2">
+        <p className="text-muted-foreground text-lg mb-2">{project.description} </p>
+        <div className="-mt-2"><Link className="text-primary" href={project.github}>Read more</Link></div>
+        <div className="flex flex-wrap flex-row flex-reverse gap-2">
           {project && project['category'].map((category, idx) =>
             <div key={idx}>
               {/* <Badge variant="secondary" className="font-normal text-xs">
                 {category}
               </Badge> */}
               <span className={`flex items-center justify-center text-xs font-normal me-2 px-2.5 py-0.5 rounded-lg ${randomColor()}`}>{category}</span>
+              {/* <p>1</p> */}
             </div>
           )}
 
