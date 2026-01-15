@@ -49,10 +49,10 @@ const qualificationData = [
         title: "education",
         data: [
             {
-                university: "K. L. Jubilee School and College",
-                qualification: "SSC in Science",
-                gpa: "5.00",
-                years: "2015 - 2017",
+                university: "North South University",
+                qualification: "B.Sc in Computer Science",
+                gpa: "3.11",
+                years: "2020 - 2025",
             },
             {
                 university: "Udayan Higher Secondary School",
@@ -61,10 +61,10 @@ const qualificationData = [
                 years: "2017 - 2019",
             },
             {
-                university: "North South University",
-                qualification: "B.Sc in Computer Science",
-                gpa: "3.11",
-                years: "2020 - 2025",
+                university: "K. L. Jubilee School and College",
+                qualification: "SSC in Science",
+                gpa: "5.00",
+                years: "2015 - 2017",
             }
         ],
     },
