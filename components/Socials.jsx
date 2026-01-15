@@ -20,7 +20,7 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "https://www.facebook.com/alam.sa.007/",
+    path: "https://www.facebook.com/sarwar76200",
     name: <SiFacebook />,
     label: "Facebook profile"
   },

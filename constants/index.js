@@ -21,8 +21,12 @@ import {
     cpp,
     mongodb,
     svelte,
-    firebase
-
+    firebase,
+    flask,
+    fastapi,
+    insomnia,
+    express,
+    playwright
 } from "@/assets/icons/index";
 
 
@@ -43,14 +47,14 @@ export const skills = [
         type: "Lang",
     },
     {
-        imageUrl: javascript,
-        name: "JavaScript",
-        type: "Lang",
-    },
-    {
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: javascript,
+        name: "JavaScript",
+        type: "Lang",
     },
     {
         imageUrl: react,
@@ -84,15 +88,45 @@ export const skills = [
         type: "Backend",
     },
     {
+        imageUrl: mongodb,
+        name: "MongoDB",
+        type: "Database",
+    },
+    {
         imageUrl: redux,
         name: "Redux",
         type: "State Management",
     },
-
     {
-        imageUrl: graphQL,
-        name: "graphQL",
+        imageUrl: flask,
+        name: "Flask",
+        type: "Framwork",
+    },
+    {
+        imageUrl: fastapi,
+        name: "FastAPI",
+        type: "Framwork",
+    },
+
+    // {
+    //     imageUrl: graphQL,
+    //     name: "graphQL",
+    //     type: "Bundler",
+    // },
+    {
+        imageUrl: insomnia,
+        name: "Insomnia",
+        type: "Api Testing",
+    },
+    {
+        imageUrl: vite,
+        name: "Vite",
         type: "Bundler",
+    },
+    {
+        imageUrl: playwright,
+        name: "Playwright",
+        type: "Testing",
     },
 ];
 
@@ -101,19 +135,19 @@ export const socials = [
     {
         icon_url: twitter,
         link_name: "Twitter",
-        link: "https://twitter.com/realpremvarma",
+        link: "https://twitter.com/lol",
         arrow: arrowicon
     },
     {
         icon_url: github,
         link_name: "Github",
-        link: "https://github.com/premvarma2002",
+        link: "https://github.com/lol",
         arrow: arrowicon
     },
     {
         icon_url: linkedin,
         link_name: "LinkedIn",
-        link: "https://www.linkedin.com/in/premvarma2002",
+        link: "https://www.linkedin.com/in/lol",
         arrow: arrowicon
     }
 ]

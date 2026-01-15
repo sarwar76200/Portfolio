@@ -27,12 +27,12 @@ const servicesData = [
     description:
       "I can develop full-stack web applications, using clean code and latest frameworks",
   },
-  {
-    icon: <MonitorSmartphone className="  " size={72} strokeWidth={0.8} />,
-    title: "Full Stack App Development",
-    description:
-      "I can develop full-stack web applications, using clean code and latest frameworks",
-  },
+  // {
+  //   icon: <MonitorSmartphone className="  " size={72} strokeWidth={0.8} />,
+  //   title: "Full Stack App Development",
+  //   description:
+  //     "I can develop full-stack web applications, using clean code and latest frameworks",
+  // },
 ];
 
 const Services = () => {
@@ -43,7 +43,8 @@ const Services = () => {
           Expertise
         </h2>
         {/* grid items  */}
-        <div className="grid xl:grid-cols-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+        {/* <div className="grid xl:grid-cols-4 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8"> */}
+        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-16">
           {servicesData.map((item, index) => {
             return (
               <Card

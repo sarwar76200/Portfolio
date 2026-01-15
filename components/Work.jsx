@@ -22,8 +22,8 @@ const projectData = [
     name: "Homeland ",
     description:
     "A real estate rental website made with react, tailwind & javascript.",
-    link: "https://beautiful-homeland.netlify.app/",
-    github: "https://github.com/premvarma2002/Real-Estate",
+    link: "https://",
+    github: "https://",
   },
   {
     image: "/work/3.png",
@@ -31,8 +31,8 @@ const projectData = [
     name: "Amazon clone",
     description:
       "Amazon Clone made with react , tailwind, javascript and redux",
-    link: "https://amazon-clone-ten-lemon.vercel.app/",
-    github: "https://github.com/premvarma2002/amazon-clone",
+    link: "https://",
+    github: "https://",
   },
   {
     image: "/work/5.png",
@@ -40,8 +40,8 @@ const projectData = [
     name: "LMS-Platform",
     description:
       "A Course Selling and LMS Platform built with Nextjs, Tailwind CSS, TypeScript, Prisma and PostgreSQL.",
-    link: "/https://lms-platform-liard.vercel.app/",
-    github: "/https://github.com/premvarma2002/lms-platform",
+    link: "/https://",
+    github: "/https://",
   },
   {
     image: "/work/6.png",
@@ -49,8 +49,8 @@ const projectData = [
     name: "Notion Clone",
     description:
       "Notion clone powered by TypeScript, Tailwind CSS, and Next.js on the frontend.",
-    link: "/https://note-taking-app-nu-coral.vercel.app/",
-    github: "/https://github.com/premvarma2002/notion-clone",
+    link: "/https://",
+    github: "/https://",
   },
   {
     image: "/work/4.png",

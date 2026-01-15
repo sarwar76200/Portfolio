@@ -50,14 +50,23 @@ const projectData = [
     link: "https://github.com/sarwar76200/STM32-EVM",
     github: "https://github.com/sarwar76200/STM32-EVM",
   },
+  // {
+  //   image: "/work/calc.png",
+  //   category: ["Java", "Swing", "Gradle"],
+  //   name: "GUI Calculator",
+  //   description:
+  //     "Desktop Calculator With Graphical UI",
+  //   link: "/",
+  //   github: "/",
+  // },
   {
-    image: "/work/calc.png",
-    category: ["Java", "Swing", "Gradle"],
-    name: "GUI Calculator",
+    image: "/work/29card.png",
+    category: ["React", "TypeScript", "TailwindCSS"],
+    name: "29 Card Game",
     description:
-      "Desktop Calculator With Graphical UI",
-    link: "/",
-    github: "/",
+      "A web-based implementation of the classic 29 card game",
+    link: "https://29-card-game.vercel.app",
+    github: "https://github.com/sarwar76200/29-Card-Game-2.0",
   }
 
 ];

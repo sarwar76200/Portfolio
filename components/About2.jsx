@@ -75,7 +75,7 @@ const qualificationData = [
             {
                 company: "NSU Problem Solvers",
                 role: "Sport Programmer",
-                years: "2020 - Present",
+                years: "2020 - 2024",
             }
         ],
     },

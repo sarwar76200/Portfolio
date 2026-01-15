@@ -6,12 +6,12 @@ import javascript from './javascript.svg'
 import cpp from './cpp.svg'
 import motion from './motion.svg'
 import mui from './mui.svg'
-import nextjs from './nextjs.svg'
+import nextjs from './next.js.svg'
 import nodejs from './nodejs.svg'
 import react from './react.svg'
 import redux from './redux.svg'
 import sass from './sass.svg'
-import tailwindcss from './tailwindcss.svg'
+import tailwindcss from './tailwind.svg'
 import typescript from './typescript.svg'
 import car from './car.svg'
 import estate from './estate.svg'
@@ -35,6 +35,12 @@ import firebase from './firebase.svg'
 import python from './python.svg'
 import pytorch from './pytorch.svg'
 import vite from './vite.svg'
+import flask from './flask.svg'
+import fastapi from './fastapi.svg'
+import insomnia from './insomnia.svg'
+import mongodb from './mongodb.svg'
+import express from './express.svg'
+import playwright from './playwright.svg'
 
 export {
     css,
@@ -73,7 +79,11 @@ export {
     firebase,
     python,
     pytorch,
-    vite
-
-
+    vite,
+    flask,
+    fastapi,
+    insomnia,
+    mongodb,
+    express,
+    playwright
 }
