@@ -75,12 +75,19 @@ module.exports = {
         slideIn: {
           "0%": { opacity: 0, transform: "translateX(0%)" },
           "100%": { opacity: 1, transform: "translateX(0)" }
+        },
+        dropIn: {
+          "0%": { opacity: 0, transform: "translateY(-5px)" },
+          "50%": { opacity: 1, transform: "translateY(1px)" },
+          // "75%": { transform: "translateY(-2px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" }
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        slideIn: "slideIn .25s ease-in-out forwards var(--delay, 0)"
+        slideIn: "slideIn .25s ease-in-out forwards var(--delay, 0)",
+        dropIn: "dropIn 0.4s ease-out forwards"
       },
       backgroundImage: {
         hero: 'url(/hero/hero-bg-violet.png)',
