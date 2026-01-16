@@ -10,8 +10,6 @@ import {
 } from "react-icons/ri";
 
 // Components
-import DevImg from "./DevImg";
-import Badge from "./Badge";
 import Socials from "./Socials";
 
 
