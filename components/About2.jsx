@@ -28,11 +28,11 @@ const infoData = [
     },
     {
         icon: <MailIcon size={20} />,
-        text: "sarwar76200.com",
+        text: "sarwar76200@gmail.com",
     },
     {
         icon: <Cake size={20} />,
-        text: "Born on 7th June , 2000",
+        text: "7th June , 2000",
     },
     {
         icon: <GraduationCap size={20} />,
@@ -81,39 +81,6 @@ const qualificationData = [
     },
 ];
 
-const skillData = [
-    {
-        title: "skills",
-        data: [
-            {
-                name: "HTML , CSS, JavaScript ",
-            },
-            {
-                name: "React , Next , Bootstrap",
-            },
-            {
-                name: "Typescript ,Tailwind , Sass CSS ",
-            },
-            {
-                name: "Redux, MUI , shadcn-UI, Prisma ",
-            },
-        ],
-    },
-    {
-        title: "tools",
-        data: [
-            {
-                imgPath: "/about/vscode.svg",
-            },
-            {
-                imgPath: "/about/docker.svg",
-            },
-            {
-                imgPath: "/about/firebase.svg",
-            },
-        ],
-    },
-];
 
 const tabs = ["Personal", "Qualifications", "Skills"]
 
@@ -122,14 +89,13 @@ const About = () => {
     const getData = (arr, title) => {
         return arr.find((item) => item.title === title);
     };
-    //  console.log(getData(qualificationData , 'experience'))
     return (
         <section className="xl:h-[840px] pb-12 pt-1 xl:py-24 ">
 
 
             <div className="container mx-auto">
                 <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto pt-2">
-                    About me
+                    About Me
                 </h2>
                 <div>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-x-32 mb-16">
